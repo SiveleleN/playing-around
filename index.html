@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Questionnaire</title>
+</head>
+<body>
+    <h1>Tell Me What You Feel!</h1>
+    <form id="feedback-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        
+        <div class="question" id="question-1">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="question" id="question-2" style="display: none;">
+            <label for="feelings">How do you feel when you think about our friendship (even if it's online)?</label>
+            <textarea id="feelings" name="feelings" required></textarea>
+        </div>
+
+        <div class="question" id="question-3" style="display: none;">
+            <label for="one_word">What is one word you would use to describe me, based on your impressions?</label>
+            <textarea id="one_word" name="one_word" required></textarea>
+        </div>
+
+        <div class="question" id="question-4" style="display: none;">
+            <label for="appreciate">What do you appreciate most about our interactions (even if we haven't met)?</label>
+            <textarea id="appreciate" name="appreciate" required></textarea>
+        </div>
+
+        <div class="question" id="question-5" style="display: none;">
+            <label for="impact">Can you share a moment (real or online) that made you feel positive about our connection?</label>
+            <textarea id="impact" name="impact" required></textarea>
+        </div>
+
+        <div class="question" id="question-6" style="display: none;">
+            <label for="laugh">What’s a time (in our conversations) when I made you smile or laugh?</label>
+            <textarea id="laugh" name="laugh" required></textarea>
+        </div>
+
+        <div class="question" id="question-7" style="display: none;">
+            <label for="wish">Is there something you wish I understood better about you, based on our interactions?</label>
+            <textarea id="wish" name="wish" required></textarea>
+        </div>
+
+        <div class="question" id="question-8" style="display: none;">
+            <label for="strength">What do you think is my greatest strength in our friendship, even if we haven’t met?</label>
+            <textarea id="strength" name="strength" required></textarea>
+        </div>
+
+        <div class="question" id="question-9" style="display: none;">
+            <label for="support">How do you feel supported by me through our conversations or interactions?</label>
+            <textarea id="support" name="support" required></textarea>
+        </div>
+
+        <div class="question" id="question-10" style="display: none;">
+            <label for="memory">Can you share a memory or thought that stands out in your mind about our interactions?</label>
+            <textarea id="memory" name="memory" required></textarea>
+        </div>
+
+        <div class="question" id="question-11" style="display: none;">
+            <label for="quality">What do you think is my most admirable quality based on what you know?</label>
+            <textarea id="quality" name="quality" required></textarea>
+        </div>
+
+        <div class="question" id="question-12" style="display: none;">
+            <label for="comfortable">In what situation (online) do you feel most comfortable interacting with me?</label>
+            <textarea id="comfortable" name="comfortable" required></textarea>
+        </div>
+
+        <div class="question" id="question-13" style="display: none;">
+            <label for="inspire">What’s a personal quality of mine that inspires you, even if we haven’t met?</label>
+            <textarea id="inspire" name="inspire" required></textarea>
+        </div>
+
+        <div class="question" id="question-14" style="display: none;">
+            <label for="time_together">How do you feel when we communicate (online or otherwise)?</label>
+            <textarea id="time_together" name="time_together" required></textarea>
+        </div>
+
+        <div class="question" id="question-15" style="display: none;">
+            <label for="improve">Is there anything I could do to improve our online friendship?</label>
+            <textarea id="improve" name="improve" required></textarea>
+        </div>
+
+        <div class="question" id="question-16" style="display: none;">
+            <label for="favorite">What’s your favorite thing about our conversations so far?</label>
+            <textarea id="favorite" name="favorite" required></textarea>
+        </div>
+
+        <div class="question" id="question-17" style="display: none;">
+            <label for="confidence">How do I help you feel more confident or comfortable during our interactions?</label>
+            <textarea id="confidence" name="confidence" required></textarea>
+        </div>
+
+        <div class="question" id="question-18" style="display: none;">
+            <label for="what_love">What’s one thing you would love to do together if we had the chance?</label>
+            <textarea id="what_love" name="what_love" required></textarea>
+        </div>
+
+        <div class="question" id="question-19" style="display: none;">
+            <label for="tough_times">How do I make you feel during tough times based on our discussions?</label>
+            <textarea id="tough_times" name="tough_times" required></textarea>
+        </div>
+
+        <div class="question" id="question-20" style="display: none;">
+            <label for="final_thoughts">Is there anything else you’d like to share that I haven’t asked about?</label>
+            <textarea id="final_thoughts" name="final_thoughts" required></textarea>
+        </div>
+
+        <div class="navigation">
+            <button type="button" id="prev-button" style="display: none;">Previous</button>
+            <button type="button" id="next-button">Next</button>
+            <button type="submit" id="submit-button" style="display: none;">Submit</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

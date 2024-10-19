@@ -1,0 +1,115 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* This aligns h1 and form vertically */
+    height: 100vh;
+    color: #333;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* Form styles */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1em;
+}
+
+textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Navigation styles */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+        padding: 8px; /* Adjusted padding for smaller buttons */
+        font-size: 0.9em; /* Smaller font size for buttons */
+    }
+
+    textarea {
+        height: 60px;
+    }
+
+    label {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    textarea {
+        height: 50px;
+    }
+
+    button {
+        padding: 6px; /* Further reduced padding for smaller screens */
+        font-size: 0.8em; /* Smaller font size for buttons */
+    }
+}
